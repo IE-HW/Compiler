@@ -1,3 +1,4 @@
+/* Creating the structure of main grammer */
 <program> ::= <statement-list>
 
 <statement-list> ::= <statement>
@@ -6,6 +7,7 @@
 <statement> ::= <variable-definition>
         | <assignment>
 
+/* Define the types of datas */
 <variable-definition> ::= "type" <type-specifier> <identifier-list> ";"
 
 <type-specifier> ::= "int"
@@ -23,6 +25,7 @@
         | <term> "*" <factor>
         | <term> "/" <factor>
 
+/* Creating the main characters */
 <factor> ::= <identifier>
     | <number>
     | "(" <expression> ")"
